@@ -31,9 +31,7 @@ const upload = multer({
   },
 });
 
-// ==========================================
 // 3. FITUR PRODUCTS
-// ==========================================
 
 // melihat daftar produk (pegawai: hanya produk dijual, admin: semua produk)
 app.get("/api/products", authMiddleware, getAllProducts);

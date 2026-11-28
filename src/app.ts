@@ -19,9 +19,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// ==========================================
 // 5. FITUR ORDERS & ORDER ITEMS
-// ==========================================
 
 // membuat transaksi baru (nomor pesanan otomatis, nama pelanggan, offline/online, subtotal, diskon, pajak, kembalian, struk token)
 app.post("/api/orders", authMiddleware, createOrder);
